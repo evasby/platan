@@ -1,0 +1,89 @@
+@mixin old-ie {
+  @if $old-ie {
+    @content;
+  }
+}
+//*********************************************************************************/
+@mixin m1024 {
+  // @if not $old-ie {
+  //  @media screen and (min-width: 800px) { @content; }
+  // }
+  @media all and (max-width: 1023px) { @content; }
+}
+//*********************************************************************************/
+@mixin placeholder($color, $opacity:1){
+  ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+    color: $color;
+    opacity: $opacity;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;
+    opacity: $opacity;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color;
+    opacity: $opacity;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $color;
+    opacity: $opacity;
+  }
+  ::-ms-input-placeholder { /* Edge */
+    color: $color;
+    opacity: $opacity;
+  }
+  :placeholder-shown { /* Standard one last! */
+    color: $color;
+    opacity: $opacity;
+  }
+}
+//*********************************************************************************/
+@mixin link($normal, $hover){
+  color:$normal;
+    &:link{color:$normal;};
+    &:visited{color:$normal;};
+    &:hover{color:$hover;};
+    &:active{color:$hover;}; 
+    //&:focus{color:$normal;}; 
+}
+//*********************************************************************************/
+@mixin clearfix{
+  &:before,
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after{
+    clear: both;
+  }
+  @include old-ie{
+    *zoom: 1;
+  }
+}
+
+//*********************************************************************************/
+@mixin before{
+  @include old-ie{
+    *zoom: expression(
+    this.runtimeStyle.zoom="1",
+    this.appendChild( document.createElement("small") ).className="before"
+    );
+    .before{
+      @content;
+    }
+  }
+}
+@mixin after{
+  @include old-ie{
+    zoom: expression(
+    this.runtimeStyle.zoom="1",
+    this.appendChild( document.createElement("small") ).className="after"
+    );
+    .after{
+      @content;
+    }
+  }
+}
+//*********************************************************************************/

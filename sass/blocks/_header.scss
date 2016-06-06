@@ -1,0 +1,87 @@
+.header{
+	padding-top: 20px;
+	&_wrap{
+		@include clearfix;
+	}
+	&_left{
+		float: left;
+		width: 65%;
+	}
+	&_right{
+		float: left;
+		width: 35%;
+		text-align: right;
+	}
+	&_text{
+		overflow: hidden;
+		padding: 43px 10px 5px 22px;
+		p{
+			margin-bottom: 11px;
+			letter-spacing: -0.4px;
+		}
+	}
+	&_logo{
+		float: left;
+		max-width: 141px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_phone{
+		padding-top: 9px;
+		p{
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+			text-align: right;
+			font-size: 13px;
+			line-height: 1.2;
+			color: #333232;
+			&:first-child{
+				span{
+					position: relative;
+					&:before{
+						content: "";
+						position: absolute;
+						left: -93px;
+						top: 2px;
+						background: url('../images/header-icon.png');
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+	}
+	&_address{
+		padding: 2px 0 15px;
+		p{
+			text-align: right;
+			font-size: 13px;
+			line-height: 1.35;
+			color: #5b5c60;
+			letter-spacing: -0.35px;
+		}
+	}
+	&_button{
+		opacity: 1;
+		display: inline-block;
+		margin-bottom: 2px;
+		height: 38px;
+		width: 189px;
+		max-width: 189px;
+		background: rgba(185,67,28,1);
+		background: linear-gradient(rgba(242,168,145,1) 0%, rgba(185,67,28,1) 100%);
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 37px;
+		@include link(#fefefe, #fefefe);
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: -0.35px;
+		&:hover{
+			background: rgba(53,97,173,1);
+			background: linear-gradient(to bottom, rgba(141,176,237,1) 0%, rgba(53,97,173,1) 100%);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "name": "World",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "^1.0.0",
+    "jquery-colorbox": "colorbox#~1.6.3",
+    "lightslider": "~1.1.5",
+    "fancyBox": "^2.1.5"
+  }
+}

@@ -1,0 +1,41 @@
+.ajax-progress{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -30px;
+  right: -50px;
+  .throbber {
+    background: transparent url('../images/newloader.gif') no-repeat 0px 0px;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+  }
+}
+.captcha{
+  overflow: hidden;
+}
+.drupal-recaptcha > div > div{
+  margin: 0 auto;
+}
+#simplemeta-meta-form-ajax-wrapper,
+#simplemeta-meta-form-ajax-wrapper div,
+#simplemeta-meta-form-ajax-wrapper form,
+#simplemeta-meta-form-ajax-wrapper label,
+#simplemeta-meta-form-ajax-wrapper input,
+#simplemeta-meta-form-ajax-wrapper textarea,
+#simplemeta-meta-form-ajax-wrapper span{
+  box-sizing: content-box !important;
+}
+.comment-form{
+  .filter-wrapper{
+    display: none;
+  }
+  a[id*="switch_edit-comment-body"]{
+    display: none !important;;
+  }
+}
+.messages.error{
+  margin-bottom: 20px;
+}
