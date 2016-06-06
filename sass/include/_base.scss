@@ -2,13 +2,18 @@
   box-sizing: border-box;
 }
 body{
-
+  background: url('../images/bac.png') #d4e0e5;
+  color: $color;
+  font-size: $fontSize;
+  font-family: $font;
 }
 .inner{
-
+  width: $width;
+  margin: 0 auto;
 }
 a{
-
+  text-decoration: underline;
+  @include link(#0a5999, #0a5999);
 }
 b, strong{
   font-weight: bold;

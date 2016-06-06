@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $(".slider_list").lightSlider({
+    item: 1,
+    controls: false,
+  }); 
   /***********************************/
   /***********************************/
   if($("#map").length>0) {

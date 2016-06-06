@@ -1,0 +1,23 @@
+.slider{
+	position: relative;
+	.lSPager{
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+	}
+	.lSSlideOuter .lSPager.lSpg > li a{
+		transform: skewX(-10deg);
+		background-color: transparent;
+		border: 2px solid #d5e0e5;
+		border-radius: 0;
+		width: 16px;
+		height: 16px;
+		&:hover{
+			background-color: #d5e0e5;
+		}
+	}
+	.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a{
+		background-color: #d5e0e5;
+	}
+}

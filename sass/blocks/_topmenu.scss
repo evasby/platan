@@ -1,0 +1,54 @@
+.topmenu{
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	padding: 0 $padding;
+	&_list{
+		background: url('../images/topmenu-bac.png') 50% 50% #125f9e no-repeat;
+		background-size: cover;
+		text-align: justify;
+		padding: 20px 100px;
+		transform: skewX(-10deg);
+    line-height: 0;
+    font-size: 1px;/*for Opera */
+    @include old-ie{
+    	*text-justify: newspaper;
+    	*zoom:1;
+    }
+    text-align-last: justify;
+		&:after{
+			width: 100%;
+	    height: 0px;
+	    visibility: hidden;
+	    overflow: hidden;
+	    content: '';
+	    display: inline-block;
+		}
+
+	}
+	&_item{
+		display: inline-block;
+		border: 2px solid transparent;
+		height: 30px;
+		padding: 0 18px;
+		line-height: normal;
+		vertical-align: top;/*for Opera */
+		&:hover{
+			background-color: #0081c7;
+		}
+		&__active{
+			border-color: #0081c7;
+		}
+	}
+	&_link{
+		display: inline-block;
+		transform: skewX(10deg);
+		font-family: $days;
+		font-size: 16px;
+		line-height: 24px;
+		@include link(#ffffff, #ffffff);
+		text-decoration: none;
+	}
+}

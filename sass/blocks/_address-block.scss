@@ -1,0 +1,16 @@
+.address-block{
+	margin-top: 48px;
+	text-align: right;
+	color: #fff;
+	font-family: $days;
+	&_top{
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	&_bottom{
+		font-size: 24px;
+	}
+	&_blue{
+		color: #0081c7;
+	}
+}
