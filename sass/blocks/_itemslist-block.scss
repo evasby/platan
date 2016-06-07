@@ -1,0 +1,38 @@
+.itemslist-block{
+	&_item{
+		@include clearfix;
+		margin-bottom: 35px;
+	}
+	&_left{
+		float: left;
+		width: 230px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 24px;
+			width: 71px;
+			height: 6px;
+			background: url('../images/pointer.png');
+		}
+	}
+	&_image{
+		border: 3px solid #d5e0e5;
+		width: 145px;
+		height: 140px;
+		padding: 10px 20px 0 20px;
+		transform-origin: 0 100%;
+		transform: skewX(-10deg);
+		img{
+			display: block;
+			transform: skewX(10deg);
+		}
+	}
+	&_text{
+		font-family: benderbolditalic;
+		height: 140px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

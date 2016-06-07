@@ -4,13 +4,14 @@
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	padding: 0 $padding;
+	padding: 0 35px;
 	&_list{
+		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
 		background: url('../images/topmenu-bac.png') 50% 50% #125f9e no-repeat;
 		background-size: cover;
 		text-align: justify;
-		padding: 20px 100px;
-		transform: skewX(-10deg);
+		padding: 20px 92px;
+		transform: skewX(-8deg);
     line-height: 0;
     font-size: 1px;/*for Opera */
     @include old-ie{
@@ -44,7 +45,7 @@
 	}
 	&_link{
 		display: inline-block;
-		transform: skewX(10deg);
+		transform: skewX(8deg);
 		font-family: $days;
 		font-size: 16px;
 		line-height: 24px;

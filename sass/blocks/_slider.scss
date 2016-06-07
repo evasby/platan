@@ -2,7 +2,7 @@
 	position: relative;
 	.lSPager{
 		position: absolute;
-		bottom: 30px;
+		bottom: 32px;
 		left: 0;
 		width: 100%;
 	}
@@ -19,5 +19,8 @@
 	}
 	.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a{
 		background-color: #d5e0e5;
+	}
+	img{
+		display: block;
 	}
 }

@@ -4,6 +4,19 @@ $(document).ready(function(){
     item: 1,
     controls: false,
   }); 
+  var partners = $(".partners_list").lightSlider({
+    item: 6,
+    pager: false,
+    controls: false,
+    loop: true,
+    slideMargin: 18
+  });
+  $(".partners_left").click(function(){
+    partners.goToPrevSlide()
+  });
+  $(".partners_right").click(function(){
+    partners.goToNextSlide()
+  });
   /***********************************/
   /***********************************/
   if($("#map").length>0) {

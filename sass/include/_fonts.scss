@@ -22,3 +22,27 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'benderitalic';
+    src: url('../fonts/benderitalic.eot');
+    src: url('../fonts/benderitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/benderitalic.woff2') format('woff2'),
+         url('../fonts/benderitalic.woff') format('woff'),
+         url('../fonts/benderitalic.ttf') format('truetype'),
+         url('../fonts/benderitalic.svg#benderitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'benderbolditalic';
+    src: url('../fonts/benderbolditalic.eot');
+    src: url('../fonts/benderbolditalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/benderbolditalic.woff2') format('woff2'),
+         url('../fonts/benderbolditalic.woff') format('woff'),
+         url('../fonts/benderbolditalic.ttf') format('truetype'),
+         url('../fonts/benderbolditalic.svg#benderbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

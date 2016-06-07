@@ -1,0 +1,54 @@
+.partners{
+	padding: 0 $padding;
+	position: absolute;
+	top: -35px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	&_wrap{
+		padding: 20px 90px;
+		height: 70px;
+		background-color: #d5e0e5;
+		background: linear-gradient(to bottom, #ffffff 0%, #d5e0e5 100%);
+		transform: skewX(-9deg);
+		position: relative;
+		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	}
+	&_list,
+	.lSSlideOuter{
+		transform: skewX(9deg);
+	}
+	&_left{
+		cursor: pointer;
+		display: block;
+		transform: skewX(9deg);
+		background-image: url('../images/partners-arrows.png');
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		width: 35px;
+		height: 30px;
+		margin-top: -18px;
+		opacity: 1;
+		&:hover{
+			background-position: 0 -40px;
+		}
+	}
+	&_right{
+		cursor: pointer;
+		display: block;
+		transform: skewX(9deg);
+		background-image: url('../images/partners-arrows.png');
+		background-position: -39px 0;
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		width: 35px;
+		height: 30px;
+		margin-top: -18px;
+		opacity: 1;
+		&:hover{
+			background-position: -39px -40px;
+		}
+	}
+}
