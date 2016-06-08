@@ -1,3 +1,6 @@
+@import "deflist";
+@import "inner";
+
 @import "header";
 @import "logo";
 @import "entry";
@@ -17,6 +20,12 @@
 
 @import "news";
 @import "pagination";
+@import "news-detail-image";
+
+
+
+@import "brands";
+@import "brand";
 
 
 @import "partners";

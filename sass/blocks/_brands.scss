@@ -1,0 +1,114 @@
+.brands{
+	padding: 9px 0 0 0;
+	&_item{
+		@include clearfix;
+		margin-bottom: 35px;
+		/*display: block;
+		text-decoration: none;
+		@include link(#5c5c5e, #5c5c5e);*/
+	}
+	&_left{
+		float: left;
+		width: 230px;
+	}
+	&_wrap{
+		display: block;
+		border: 3px solid #d5e0e5;
+	  transform-origin: 0 100%;
+		transform: skewX(-10deg);
+		width: 145px;
+		height: 140px;
+		position: relative;
+		z-index: 1;
+	}
+	&_image{
+		background-color: #fff;
+		padding: 10px 20px 0 20px;
+		position: relative;
+		&:before{
+			content: '';			
+			top: 50%;
+			right: -2px;
+			width: 16px;
+			height: 6px;
+			margin-top: 1px;
+			background: url('../images/pointer.png');
+			position: absolute;
+			transform: skewX(10deg);
+		}
+		&:after{
+			content: '';
+			top: 50%;
+			right: -57px;
+			width: 55px;
+			height: 6px;
+			margin-top: 1px;
+			background: url('../images/pointer.png') center right;
+			position: absolute;
+			z-index: -1;
+			transform: skewX(10deg);
+			transition: right, 0.2s;
+		}
+
+		.brands_wrap:hover &:after{
+			right: -27px;
+		}
+		img{
+			display: block;
+			max-width: 115px;
+			transform: skewX(10deg);
+			transition: opacity, 0.2s;
+			.brands_wrap:hover &{
+				opacity: 0.5;
+			}
+		}
+	}
+	&_title{
+		display: block;
+		font-family: benderbolditalic;
+		font-size: 20px;
+		@include link(#0a5999, #2c2c30);
+		height: 20px;
+		overflow: hidden;
+		margin: -3px 0 0 0;
+		padding-left: 5px;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&_text{
+		padding: 3px 100px 0 3px;
+		line-height: 17px;
+		font-family: benderitalic;
+		height: 100px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&_right{
+		float: right;
+		margin: 55px 2px 0 0;
+		background: #0081c7;
+		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		font-family: benderbold;
+		padding: 7px 35px 9px 35px;
+		position: relative;
+		transform: skewX(-10deg);
+		@include link(#fff, #fff);
+		text-decoration: none;
+		&:hover{
+			background: #1d3972;
+			background: linear-gradient(to bottom, #1d3972 0%, #0081c7 100%);
+		}
+		&:before{
+			content: '';
+			width: 65px;
+			height: 6px;
+			position: absolute;
+			top: 12px;
+			left: -67px;
+			background: url('../images/pointer.png');
+			transform: skewX(10deg);
+		}
+	}
+}

@@ -3,7 +3,8 @@ $(document).ready(function(){
   $(".slider_list").lightSlider({
     item: 1,
     controls: false,
-  }); 
+    mode: 'fade'
+  });
   var partners = $(".partners_list").lightSlider({
     item: 6,
     pager: false,

@@ -1,11 +1,18 @@
 .content{
-	@include clearfix;
 	&__side{
 		overflow: hidden;
 		padding-right: 30px;
 	}
-	&_front{
-		overflow: hidden;
-		padding-right: 30px;
+	&__news{
+		margin-top: 5px;
+	}
+	ul{
+		margin-bottom: 20px;
+		li{
+			margin-bottom: 3px;
+			&:before{
+				content: '- ';
+			}
+		}
 	}
 }

@@ -1,4 +1,5 @@
 .main{
+	@include clearfix;
 	background-color: #fff;
-	padding: 24px $padding 116px $padding;
+	padding: 24px $padding 90px $padding;
 }

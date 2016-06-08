@@ -6,11 +6,11 @@
 	width: 100%;
 	z-index: 1;
 	max-height: 70px;
-	overflow: hidden;
 	&_wrap{
 		padding: 22px 90px 0 95px;
 		height: 70px;
-		background-color: #d5e0e5;
+		overflow: hidden;
+		background-color: #ffffff;
 		background: linear-gradient(to bottom, #ffffff 0%, #d5e0e5 100%);
 		transform: skewX(-8deg);
 		position: relative;

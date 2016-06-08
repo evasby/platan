@@ -1,5 +1,5 @@
-.news{
-	padding: 6px 0 0 0;
+.brand{
+	padding: 6px 0 20px 0;
 	&_item{
 		@include clearfix;
 		margin-bottom: 32px;
@@ -26,7 +26,7 @@
 		}	
 	}
 	&_image{
-		border: 3px solid #2c2c30;
+		border: 3px solid #d5e0e5;
 		overflow: hidden;
 		height: 140px;
 		width: 245px;
@@ -57,7 +57,8 @@
 	}
 	&_text{
 		overflow: hidden;
-		border-bottom: 3px solid #d5e0e5;
+		padding-right: 80px;
+		//border-bottom: 3px solid #d5e0e5;
 	}
 	&_title{
 		display: block;
@@ -77,5 +78,34 @@
 		padding-bottom: 10px;
 		font-family: benderitalic;
 		line-height: 17px;
+		b{
+			font-family: benderbolditalic;
+		}
+	}
+	&_right{
+		float: right;
+		margin: 58px 2px 0 0;
+		background: #0081c7;
+		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		font-family: benderbold;
+		padding: 7px 25px 9px 29px;
+		position: relative;
+		transform: skewX(-10deg);
+		@include link(#fff, #fff);
+		text-decoration: none;
+		&:hover{
+			background: #1d3972;
+			background: linear-gradient(to bottom, #1d3972 0%, #0081c7 100%);
+		}
+		&:before{
+			content: '';
+			width: 65px;
+			height: 6px;
+			position: absolute;
+			top: 12px;
+			left: -67px;
+			background: url('../images/pointer.png');
+			transform: skewX(10deg);
+		}
 	}
 }
