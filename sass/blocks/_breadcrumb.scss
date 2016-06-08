@@ -1,0 +1,21 @@
+.breadcrumb{
+	@include clearfix;
+	&_item{
+		float: left;
+		margin-bottom: 15px;
+		a{
+			@include link(#8e8c90, #8e8c90);
+			text-decoration: none;
+		}
+		span{
+			color: #8e8c90;
+		}
+	}
+	&_arrow{
+		display: inline-block;
+		margin: 0 8px 0 11px;
+		width: 14px;
+		height: 9px;
+		background: url('../images/breadcrumb-arrow.png') left top no-repeat;
+	}
+}

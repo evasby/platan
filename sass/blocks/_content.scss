@@ -1,6 +1,11 @@
 .content{
+	@include clearfix;
 	&__side{
 		overflow: hidden;
-		padding-right: 50px;
+		padding-right: 30px;
+	}
+	&_front{
+		overflow: hidden;
+		padding-right: 30px;
 	}
 }

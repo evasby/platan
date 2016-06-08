@@ -1,4 +1,5 @@
 .itemslist-block{
+	padding: 20px 0 0 0;
 	&_item{
 		@include clearfix;
 		margin-bottom: 35px;
@@ -11,9 +12,10 @@
 			content: '';
 			position: absolute;
 			top: 50%;
-			right: 24px;
+			right: 19px;
 			width: 71px;
 			height: 6px;
+			margin-top: -3px;
 			background: url('../images/pointer.png');
 		}
 	}
@@ -30,6 +32,8 @@
 		}
 	}
 	&_text{
+		padding: 0 0 2px 4px;
+		line-height: 17px;
 		font-family: benderbolditalic;
 		height: 140px;
 		display: table-cell;

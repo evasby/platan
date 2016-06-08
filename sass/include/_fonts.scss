@@ -11,6 +11,18 @@
 
 }
 @font-face {
+    font-family: 'benderbold';
+    src: url('../fonts/benderbold.eot');
+    src: url('../fonts/benderbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/benderbold.woff2') format('woff2'),
+         url('../fonts/benderbold.woff') format('woff'),
+         url('../fonts/benderbold.ttf') format('truetype'),
+         url('../fonts/benderbold.svg#benderbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'days';
     src: url('../fonts/days.eot');
     src: url('../fonts/days.eot?#iefix') format('embedded-opentype'),

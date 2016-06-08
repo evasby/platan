@@ -1,0 +1,36 @@
+.pagination{
+	padding-top: 37px;
+	&_list{
+		text-align: center;
+	}
+	&_item{
+		display: inline-block;
+		transform: skewX(-11deg);
+		span{
+			border: 3px solid #d5e0e5;
+			display: block;
+			margin: 0 2px;
+			font-family: benderbold;
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			&:hover{
+				border-color: #0a5999;
+			}
+		}
+		&__active{
+			span{
+				border: none;
+				background: #0081c7;
+		    background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		    color: #fff;
+		    padding-top: 8px;
+			}
+		}
+	}
+	&_link{
+		display: block;
+		@include link(#2c2c30, #2c2c30);
+		text-decoration: none;
+	}
+}
