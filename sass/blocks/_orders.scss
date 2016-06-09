@@ -1,4 +1,16 @@
 .orders{
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 35px 5px 0 0;
+		border-color: #ffffff transparent transparent transparent;
+	}
 	table{
 		width: 100%;
     border-collapse: collapse; 
@@ -20,23 +32,8 @@
 			vertical-align: middle;
 			border: 1px solid #2c2c30;
 			border-right: 1px solid #c5d4df;
-			padding: 10px 0;
+			padding: 10px 10px;
 			border-collapse: separate;
-
-			&:first-child{
-				position: relative;
-				&:before{
-					content: "";
-					position: absolute;
-					top: -2px;
-					left: -2px;
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: 35px 5px 0 0;
-					border-color: #ffffff transparent transparent transparent;
-				}
-			}
 		}
 	}
 	&_item{

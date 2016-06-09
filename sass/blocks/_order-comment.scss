@@ -1,0 +1,33 @@
+.order-comment{
+	display: inline-block;
+	margin-right: 50px;
+	font-family: $days;
+	font-size: 14px;
+	position: relative;
+	top: -2px;
+	input[type="checkbox"] {
+    display:none;
+	}
+	input[type="checkbox"] + label {
+		cursor:pointer;
+		font-family: $days;
+		color: #7b93a8;
+		font-size: 12px;
+		margin: 0 0 0 20px;
+ 		&:before{
+			content: '';
+			display:inline-block;
+	    width:16px;
+	    height:16px;
+	    margin:-1px 8px 0 0;
+	    vertical-align:middle;
+	    background:url('../images/checkbox.png') left top no-repeat;
+		}
+	}
+	input[type="checkbox"]:checked + label {
+		&:before{
+			content: '';
+			background:url('../images/checkbox.png') -16px top no-repeat;
+		}  
+	}
+}

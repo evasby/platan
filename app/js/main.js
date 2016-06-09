@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $(".myselect").dropdown();
   $(".slider_list").lightSlider({
     item: 1,
     controls: false,
@@ -28,6 +29,7 @@ $(document).ready(function(){
         container.hide();
     }
   });
+
   /***********************************/
   if($("#yamap").length>0) {
     ymaps.ready(init);

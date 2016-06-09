@@ -5,7 +5,7 @@
   <!--[if lt IE 9]>
     <script type='text/javascript' src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <title>Мои заказы</title>
+  <title>Оформление заказа</title>
   <!-- build:css css/all.css -->
     <link rel="stylesheet" href="/css/all.css">
   <!-- endbuild -->
@@ -65,8 +65,8 @@
       <nav class="topmenu">
         <ul class="topmenu_list">
           <li class="topmenu_item"><a href="personal.html" class="topmenu_link">Подбор товаров</a></li>
-          <li class="topmenu_item topmenu_item__active"><a href="orders.html" class="topmenu_link">Мои заказы</a></li>
-          <li class="topmenu_item"><a href="basket.html" class="topmenu_link">Корзина</a></li>
+          <li class="topmenu_item"><a href="orders.html" class="topmenu_link">Мои заказы</a></li>
+          <li class="topmenu_item topmenu_item__active"><a href="basket.html" class="topmenu_link">Корзина</a></li>
           <li class="topmenu_item"><a href="manager.html" class="topmenu_link">Ваш менеджер</a></li>
         </ul>
       </nav>
@@ -82,62 +82,74 @@
         </div>
         <div class="breadcrumb_item">
           <i class="breadcrumb_arrow"></i>
-          <span>Мои заказы</span>
+          <span>Оформление заказа</span>
         </div>
       </div>
-      <h1>Мои заказы</h1>
+      <h1>Оформление заказа</h1>
     </div>
     <div class="main">
       <div class="content">
-        <div class="orders">
-          <table>
-            <tbody>
-              <tr>
-                <th>Код заказа</th>
-                <th>Стоимость</th>
-                <th>Статус</th>
-                <th>Товары</th>
-                <th>Отмена</th>
-              </tr>
-              <tr>
-                <td>3878<span class="orders_mgray">от 16.05.2016</span></td>
-                <td>21 700 руб.</td>
-                <td><span class="orders_gray">отгружен</span></td>
-                <td>
-                  <span class="orders_item"><span class="orders_blue">Диск ENKEI SC14</span> - 4 шт.  <span class="orders_gray">(6 300 руб. - 1 шт.)</span></span>
-                  <span class="orders_item"><span class="orders_blue">Кольцо алюминиевое</span> - 4 шт.  <span class="orders_gray">(70 руб. - 1 шт.)</span></span>
-                </td>
-                <td><span class="orders_cancel"></span></td>
-              </tr>
-              <tr>
-                <td>3858<span class="orders_mgray">от 11.05.2016</span></td>
-                <td>27 768 руб.</td>
-                <td><span class="orders_green">подтвержден</span></td>
-                <td>
-                  <span class="orders_item"><span class="orders_blue">Диск 1000 MIGLIA MM037</span> - 4 шт.  <span class="orders_gray">(7 800 руб. - 1 шт.)</span>
-                </td>
-                <td><span class="orders_cancel"></span></td>
-              </tr>
-              <tr>
-                <td>3639<span class="orders_mgray">от 20.04.2016</span></td>
-                <td>44 000 руб.</td>
-                <td><span class="orders_red">отменен</span></td>
-                <td>
-                  <span class="orders_item"><span class="orders_blue">Диск REPLAY MR112</span> - 4 шт.  <span class="orders_gray">(11 000 руб. - 1 шт.)</span>
-                </td>
-                <td><span class="orders_cancel"></span></td>
-              </tr>
-              <tr>
-                <td>3878<span class="orders_mgray">от 16.05.2016</span></td>
-                <td>44 000 руб.</td>
-                <td><span class="orders_red">отменен</span></td>
-                <td>
-                  <span class="orders_item"><span class="orders_blue">Диск REPLAY MR112</span> - 4 шт.  <span class="orders_gray">(11 000 руб. - 1 шт.)</span>
-                </td>
-                <td><span class="orders_cancel"></span></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="basket-table">
+          <form action="#">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Модель</th>
+                  <th>Цена</th>
+                  <th>Количество</th>
+                  <th>Итого</th>
+                </tr>
+                <tr>
+                  <td>
+                  <div class="basket-table_item"><span class="basket-table_blue">Yokohama Ice GUARD Stud</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
+                  </td>
+                  <td><span class="basket-table_price">5 950 руб.</span></td>
+                  <td>4</td>
+                  <td><span class="basket-table_price">23 800 руб</span>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="basket-table_item"><span class="basket-table_blue">Antera Type 345</span><span class="basket-table_gray">Характеристики: литые, алюминевый сплав; Ширина: 10; Диаметр: 20; PSD: 5/130; ET: 52; DIA: 71.6; Цвет: Silver Lip Polished</span></div>
+                  </td>
+                  <td><span class="basket-table_price">5 500 руб.</span></td>
+                  <td>4</td>
+                  <td><span class="basket-table_price">22 000 руб</span>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="basket-table_item"><span class="basket-table_blue">Dunlop Sportmax SportSmart</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
+                  </td>
+                  <td><span class="basket-table_price">5 230 руб.</span></td>
+                  <td>2</td>
+                  <td><span class="basket-table_price">10 460 руб</span>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="basket-table_item"><span class="basket-table_blue">GT-Radial ST-4000 Cargomax</span><span class="basket-table_gray">Характеристики: литые, алюминевый сплав; Ширина: 10; Диаметр: 20; PSD: 5/130; ET: 52; DIA: 71.6; Цвет: Silver Lip Polished</span></div>
+                  </td>
+                  <td><span class="basket-table_price">6 225 руб.</span></td>
+                  <td>4</td>
+                  <td><span class="basket-table_price">24 900 руб</span>.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="basket-table_item"><span class="basket-table_blue">Titan Standart 6 CT-66.1L</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
+                  </td>
+                  <td><span class="basket-table_price">3 890 руб.</span></td>
+                  <td>1</td>
+                  <td><span class="basket-table_price">3 890 руб.</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="basket-table_total">    
+              <div class="order-comment">Комментарий к заказу: 
+                <input id="c1" type="checkbox" /><label for="c1">В резерв</label>
+                <input id="c2" type="checkbox" /><label for="c2">На отгрузку</label>
+              </div>
+              Итого к оплате: <span>85 050 руб.</span>
+            </div>
+            <div class="basket-table_submit"><input type="submit" value="Оформить заказ"></div>
+          </form>
         </div>
       </div>
     </div>

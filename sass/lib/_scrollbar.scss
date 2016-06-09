@@ -1,0 +1,96 @@
+.fs-scrollbar
+{
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+.fs-scrollbar,.fs-scrollbar *
+{
+	moz-user-select: none!important;
+	ms-user-select: none!important;
+	user-select: none!important;
+	webkit-user-select: none!important;
+}
+.fs-scrollbar,.fs-scrollbar-bar,.fs-scrollbar-content,.fs-scrollbar-handle,.fs-scrollbar-track
+{
+	box-sizing: border-box;
+}
+.fs-scrollbar-content
+{
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	webkit-overflow-scrolling: touch;
+	z-index: 1;
+}
+.fs-scrollbar-content::-webkit-resizer,.fs-scrollbar-content::-webkit-scrollbar,.fs-scrollbar-content::-webkit-scrollbar-button,.fs-scrollbar-content::-webkit-scrollbar-corner,.fs-scrollbar-content::-webkit-scrollbar-thumb,.fs-scrollbar-content::-webkit-scrollbar-track,.fs-scrollbar-content::-webkit-scrollbar-track-piece
+{
+	background: 0 0;
+	opacity: 0;
+}
+.fs-scrollbar-bar
+{
+	background: #fff;
+	//border: 1px solid;
+	//border-width: 0 0 0 1px;
+	display: none;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 17px;
+	z-index: 2;
+}
+.fs-scrollbar-track
+{
+	background: #f1f1f1;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.fs-scrollbar-handle
+{
+	background: #c1c1c1;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	z-index: 2;
+}
+.fs-scrollbar-horizontal .fs-scrollbar-content
+{
+	overflow: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0 0 20px 0;
+}
+.fs-scrollbar-horizontal .fs-scrollbar-bar
+{
+	border-width: 1px 0 0 0;
+	bottom: 0;
+	height: 20px;
+	top: auto;
+	width: 100%;
+}
+.fs-scrollbar-horizontal .fs-scrollbar-handle
+{
+	bottom: 0;
+	height: 20px;
+	right: auto;
+	top: auto;
+	width: 40px;
+}
+.fs-scrollbar-active .fs-scrollbar-content,.fs-scrollbar-setup .fs-scrollbar-content
+{
+	padding: 20px;
+}
+.fs-scrollbar-active .fs-scrollbar-bar,.fs-scrollbar-setup .fs-scrollbar-bar
+{
+	display: block;
+}

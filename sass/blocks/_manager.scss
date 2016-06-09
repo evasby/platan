@@ -4,4 +4,59 @@
 		float: left;
 		width: 50%;
 	}
+	&_item{
+		margin-bottom: 34px;
+	}
+	&_title{
+		font-family: $days;
+		font-size: 13px;
+		color: #fff;
+		padding: 9px 0 0 57px;
+		background-color: #2c2c30;
+		height: 35px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 35px 5px 0 0;
+			border-color: #ffffff transparent transparent transparent;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 20px;
+			width: 20px;
+			height: 20px;
+			background: url('../images/manager.png');
+		}
+		&__manager{
+			&:after{
+				background-position: -20px 0;
+			}
+		}
+	}
+	&_row{
+		@include clearfix;
+		border-left: 1px solid #c5d4df;
+		border-bottom: 1px solid #c5d4df;
+		border-right: 1px solid #c5d4df;
+		height: 40px;
+	}
+	&_left{
+		float: left;
+		width: 50%;
+		color: #2c2c30;
+		padding: 11px 0 14px 20px;
+	}
+	&_right{
+		float: left;
+		width: 50%;
+		padding: 11px 0 14px 0;
+	}
 }
