@@ -1,0 +1,90 @@
+.form-entire{
+	padding: 0 32px 0 0;
+	&_title{
+		transform-origin: 0 100%;
+		transform: skewX(-11deg);
+		background: rgba(213,224,229,1);
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(213,224,229,1) 100%);
+	}
+	&_skew{
+		transform: skewX(11deg);
+		display: block;
+		height: 50px;
+		padding: 17px 33px 0 81px;		
+		position: relative;
+		text-decoration: none;
+		@include link(#2c2c30, #2c2c30);
+		font-family: $days;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50px;
+			height: 100%;
+			background: url('../images/icon-entry.png');
+		}
+		&:before{
+			transform: skewX(-11deg);
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50px;
+			height: 100%;
+			background: #1d3972;
+			background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		}
+	}
+	&_wrap{
+		background-color: #fff;
+		margin-top: 3px;
+		padding: 26px 0 31px 0
+	}
+	&_group{
+		margin-bottom: 12px;
+		label{
+			display: block;
+			margin-bottom: 7px;
+			font-family: $days;
+			padding-left: 30px;
+			color: #2c2c30;
+		}
+	}
+	&_inner{
+		transform: skewX(-11deg);
+		background-color: #d5e0e5;
+		width: 213px;
+		margin: 0 auto;
+		input{
+			display: block;
+			padding: 0 10px;
+			transform: skewX(11deg);
+			border: none;
+			width: 213px;
+			height: 35px;
+			background-color: transparent;
+		}
+	}
+	&_submit{
+		float: right;
+		transform-origin: 100% 0;
+		transform: skewX(-11deg);
+		background-color: #0a5999;
+		margin-top: 3px;
+		&:hover{
+			background-color: #0081c7;
+		}
+		input,
+		button{
+			cursor: pointer;
+			display: block;
+			padding: 6px 37px;
+			transform: skewX(11deg);
+			border: none;
+			background-color: transparent;
+			font-family: $days;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.personal-block{
+	margin: 50px 0 0 66px;
+	float: left;
+	&_name{
+		transform-origin: 100% 100%;
+		transform: skewX(-9deg);
+		background: rgba(213,224,229,1);
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(213,224,229,1) 100%);
+		span{
+			transform: skewX(9deg);
+			display: block;
+			height: 29px;
+			padding: 7px 15px 0 44px;		
+			position: relative;
+			text-decoration: none;
+			@include link(#2c2c30, #2c2c30);
+			font-family: $days;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30px;
+				height: 100%;
+				background: url('../images/icon-personal.png');
+			}
+			&:before{
+				transform: skewX(-9deg);
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30px;
+				height: 100%;
+				background: #1d3972;
+				background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+			}
+		}
+	}
+	&_exit{
+		float: right;
+		transform-origin: 100% 0;
+		transform: skewX(-9deg);
+		background: #1d3972;
+		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		&:hover{
+			background: #0081c7;
+		  background: linear-gradient(to bottom, #1d3972 0%, #0081c7 100%);
+		}
+		a{
+			cursor: pointer;
+			display: block;
+			padding: 4px 25px 4px 26px;
+			transform: skewX(9deg);
+			border: none;
+			background-color: transparent;
+			font-family: $days;
+			font-size: 12px;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}

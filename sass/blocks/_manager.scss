@@ -1,0 +1,7 @@
+.manager{
+	@include clearfix;
+	&_side{
+		float: left;
+		width: 50%;
+	}
+}

@@ -7,8 +7,18 @@
 	&_wrap{
 		@include clearfix;
 	}
-	&_item{
+	&_left{
 		float: left;
-		width: 33.33%;
+		width: 20%;
+	}
+	&_center{
+		float: left;
+		width: 52%;
+		min-height: 1px;
+		position: relative;
+	}
+	&_right{
+		float: left;
+		width: 28%;
 	}
 }

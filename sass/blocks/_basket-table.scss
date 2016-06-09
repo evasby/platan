@@ -1,0 +1,146 @@
+.basket-table{
+	table{
+		width: 100%;
+    border-collapse: collapse; 
+		td{
+			font-family: $days;
+			color: #2c2c30;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid #c5d4df;
+			padding: 28px 10px;
+			//white-space: nowrap;
+			min-width: 68px;
+		}
+		th{
+			background-color: #2c2c30;
+			font-family: $days;
+			font-size: 13px;
+			color: #fff;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid #2c2c30;
+			border-right: 1px solid #c5d4df;
+			padding: 10px 0;
+			border-collapse: separate;
+			&:first-child{
+				position: relative;
+				&:before{
+					content: "";
+					position: absolute;
+					top: -2px;
+					left: -2px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 35px 5px 0 0;
+					border-color: #ffffff transparent transparent transparent;
+				}
+			}
+		}
+	}
+	&_photo{
+		display: inline-block;
+		width: 38px;
+		margin: 0 20px;
+		height: 30px;
+		background: url('../images/basket-table-photo.png');
+		&:hover{
+			background-position: -51px 0;
+		}
+	}
+	&_price{
+		white-space: nowrap;
+	}
+	&_cancel{
+		cursor: pointer;
+		display: inline-block;
+		width: 21px;
+		height: 20px;
+		background: url('../images/orders-cancel.png');
+		&:hover{
+			background-position: 0 -25px;
+		}
+	}
+	&_quanity{
+		min-width: 70px;
+		margin-top: 5px;
+		input{
+			width: 30px;
+			text-align: center;
+			font-family: $days;
+			color: #2c2c30;
+			position: relative;
+			top: -3px;
+			border: none;
+		}
+	}
+	&_minus{
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		background: url('../images/basket-table-quanity.png');
+		&:hover{
+			background-position: 15px 0;
+		}
+	}
+	&_plus{
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		background: url('../images/basket-table-quanity.png');
+		background-position: 0 -15px;
+		&:hover{
+			background-position: 15px -15px;
+		}
+	}
+	&_item{
+		text-align: left;
+		padding-left: 10px;
+	}
+	&_blue{
+		color: #0a5999;
+		display: block;
+		margin-bottom: 7px;
+	}
+	&_gray{
+		font-size: 12px;
+		color: #8e8c90;
+	}
+	&_total{
+		font-family: $days;
+		margin-top: 29px;
+		font-size: 16px;
+		color: #2c2c30;
+		text-align: right;
+		span{
+			color: #0a5999;
+		}
+	}
+	&_submit{
+		margin-top: 28px;
+		text-align: right;
+		transform-origin: 100% 0;
+		transform: skewX(-11deg);
+		float: right;
+		@include link(#fff, #fff);
+		font-family: $days;
+		font-size: 12px;
+		background: #1d3972;
+		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		&:hover{
+			background: #0081c7;
+		  background: linear-gradient(to bottom, #1d3972 0%, #0081c7 100%);
+		}
+		input{
+			cursor: pointer;
+			display: inline-block;
+			padding: 8px 53px;
+			background-color: transparent;
+			border: none;
+			transform: skewX(11deg);
+			font-family: $days;
+			color: #fff;
+		}
+	}
+}

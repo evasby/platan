@@ -1,0 +1,113 @@
+.basket-popup{
+	display: none;
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+	width: 470px;
+	border-top: 3px solid #0a5999;
+	position: absolute;
+	left: 1px;
+	top: 75px;
+	background-color: #fff;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 24px;
+		top: -7px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 7px 7px 7px;
+		border-color: transparent transparent #ffffff transparent;
+	}
+	&_item{
+		@include clearfix;
+		border-bottom: 1px solid #d5e0e5;
+		padding: 11px 0 15px 0;
+	}
+	&_image{
+		margin-top: 2px;
+		float: left;
+		width: 70px;
+		height: 70px;
+		border: 1px solid #d5e0e5;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_list{
+		padding: 0 15px 15px 15px;
+	}
+	&_title{
+		padding-left: 85px;
+		height: 25px;
+		font-family: benderbold;
+		color: #2c2c30;
+	}
+	&_quanity{
+		font-family: bender;
+		color: #8e8c90;
+	}
+	&_size{
+		padding-left: 85px;
+		font-family: bender;
+		color: #8e8c90;
+		height: 32px;
+	}
+	&_price{
+		padding-left: 85px;
+		font-family: benderbold;
+		color: #0a5999;
+	}
+	&_total{
+		padding: 11px 0 0 0;
+		text-align: right;
+		font-family: benderbold;
+		color: #2c2c30;
+		span{
+			color: #0a5999;
+			margin-left: 9px;
+		}
+	}
+	&_links{
+		@include clearfix;
+		padding-top: 14px;
+		overflow: hidden;
+		a{
+			float: left;
+			width: 50%;
+			text-align: center;
+			text-decoration: none;
+			padding: 9px 0;
+			span{
+				display: block;
+				transform: skewX(11deg);
+			}
+		}
+	}
+	&_linkswrap{
+		margin: 0 -3px;
+	}
+	&_link1{
+		//margin-left: -3px;
+		transform: skewX(-11deg);
+		background-color: #d5e0e5;
+		@include link(#2c2c30, #2c2c30);
+		font-family: $days;
+		font-size: 12px;
+		&:hover{
+			background-color: #c5d4df;
+		}
+	}
+	&_link2{
+		//margin-right: -3px;
+		transform: skewX(-11deg);
+		background-color: #0a5999;
+		@include link(#fff, #fff);
+		font-family: $days;
+		font-size: 12px;
+		&:hover{
+			background-color: #0081c7;
+		}
+	}
+}
