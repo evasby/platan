@@ -1,0 +1,174 @@
+.select-form{
+	@include clearfix;
+	margin-bottom: 32px;
+	display: table;
+	width: 100%;
+	&_wrap{
+		display: table;
+		width: 100%;
+		background: url("../images/select-tires.jpg") 0 0;
+		background-size: 100% 100%;
+		height: 140px;
+		width: 100%;
+		padding: 0 0 0 169px;
+		.select-form__bigtires &{
+			background: url("../images/select-bigtires.jpg") 0 0;
+			background-size: 100% 100%;
+		}
+		.select-form__moto &{
+			background: url("../images/select-moto.jpg") 0 0;
+			background-size: 100% 100%;
+		}
+		.select-form__wheels &{
+			background: url("../images/select-wheels.jpg") 0 0;
+			background-size: 100% 100%;
+		}
+		.select-form__charge &{
+			background: url("../images/select-charge.jpg") 0 0;
+			background-size: 100% 100%;
+		}
+	}
+	&_table{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&_item{
+		height: 30px;
+		float: left;
+		@include clearfix;
+		position: relative;
+		margin: 10px 0;
+		.select-form__moto &:last-child{
+			margin-left: 17px;
+		}
+	}
+	&_checkbox{
+		height: 30px;
+		float: left;
+		@include clearfix;
+		position: relative;
+		margin: 10px 0;
+	}
+	&_label{
+		float: left;
+		font-family: $days;
+		color: #2c2c30;
+		margin: 6px 7px 0 30px;
+		&__70{
+			width: 70px;
+			margin-right: 0;
+		}
+		.select-form__charge &{
+			width: 115px;
+			margin: 6px 7px 0 30px;
+		}
+	}
+	&_code{
+		float: left;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		padding: 8px 0 0 5px;
+		position: relative;
+		z-index: 2;
+		font-family: benderbolditalic;
+		color: #fff;
+		&:before{
+			content: '';
+			background-color: #7b93a8;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			transform-origin: 0 100%;
+    	transform: skewX(-11deg);
+		}
+	}
+	&_select{
+		width: 196px;
+		float: left;
+		&__short{
+			width: 91px;
+		}
+		&__big{
+			width: 285px;
+		}
+		.select-form__charge &{
+			width: 325px;
+		}
+	}
+	input[type="checkbox"] {
+    display:none;
+	}
+	input[type="checkbox"] + label {
+		cursor:pointer;
+		font-family: $days;
+		color: #7b93a8;
+		font-size: 12px;
+		margin: 0 0 0 20px;
+		position: relative;
+		top: 7px;
+ 		&:before{
+			content: '';
+			display:inline-block;
+	    width:16px;
+	    height:16px;
+	    margin:-1px 8px 0 0;
+	    vertical-align:middle;
+	    background:url('../images/checkbox.png') left top no-repeat;
+		}
+	}
+	input[type="checkbox"]:checked + label {
+		&:before{
+			content: '';
+			background:url('../images/checkbox.png') -16px top no-repeat;
+		}  
+	}
+	&_sun{
+		display: inline-block;
+		width: 31px;
+		height: 31px;
+		background: url('../images/select-form-weather.png');
+		margin: 0 0 -19px 3px;
+		position: relative;
+		top: -8px;
+	}
+	&_snow{
+		display: inline-block;
+		width: 31px;
+		height: 31px;
+		background: url('../images/select-form-weather.png') 31px 0;
+		margin: 0 0 -19px 3px;
+		position: relative;
+		top: -8px;
+	}
+	&_submit{
+		margin-right: 25px;
+		text-align: right;
+		transform-origin: 100% 0;
+		transform: skewX(-11deg);
+		float: right;
+		@include link(#fff, #fff);
+		font-family: $days;
+		font-size: 12px;
+		background: #1d3972;
+		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
+		&:hover{
+			background: #0081c7;
+		  background: linear-gradient(to bottom, #1d3972 0%, #0081c7 100%);
+		}
+		input{
+			cursor: pointer;
+			display: inline-block;
+			padding: 8px 53px;
+			background-color: transparent;
+			border: none;
+			transform: skewX(11deg);
+			font-family: $days;
+			color: #fff;
+		}
+	}
+}

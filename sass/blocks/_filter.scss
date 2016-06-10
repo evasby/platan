@@ -1,0 +1,27 @@
+.filter{
+	@include clearfix;
+	margin-bottom: 29px;
+	&_right{
+		float: right;
+		padding-right: 5px;
+	}
+	&_left{
+		float: left;
+	}
+	&_item{
+		@include clearfix;
+	}
+	&_label{
+		float: left;
+		font-family: $days;
+		color: #2c2c30;
+		margin: 6px 30px 0 0;
+	}
+	&_select{
+		float: left;
+		width: 196px;
+		&__short{
+			width: 70px;
+		}
+	}
+}

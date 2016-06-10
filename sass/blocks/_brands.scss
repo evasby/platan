@@ -6,10 +6,16 @@
 		/*display: block;
 		text-decoration: none;
 		@include link(#5c5c5e, #5c5c5e);*/
+		width: 100%;
 	}
 	&_left{
 		float: left;
 		width: 230px;
+		margin-left: -100%;
+	}
+	&_center{
+		float: left;
+		width: 100%;
 	}
 	&_wrap{
 		display: block;
@@ -70,15 +76,15 @@
 		@include link(#0a5999, #2c2c30);
 		height: 20px;
 		overflow: hidden;
-		margin: -3px 0 0 0;
 		padding-left: 5px;
 		text-decoration: none;
+		margin: -3px 230px 0 230px;
 		&:hover{
 			text-decoration: underline;
 		}
 	}
 	&_text{
-		padding: 3px 100px 0 3px;
+		padding: 3px 270px 0 233px;
 		line-height: 17px;
 		font-family: benderitalic;
 		height: 100px;
@@ -86,13 +92,16 @@
 		vertical-align: middle;
 	}
 	&_right{
-		float: right;
-		margin: 55px 2px 0 0;
+		width: 196px;
+		//margin-left: -250px;
+		float: left;
+		margin: 55px 0 0 -196px;
 		background: #0081c7;
 		background: linear-gradient(to bottom, #0081c7 0%, #1d3972 100%);
 		font-family: benderbold;
 		padding: 7px 35px 9px 35px;
 		position: relative;
+		transform-origin: 0 10%;
 		transform: skewX(-10deg);
 		@include link(#fff, #fff);
 		text-decoration: none;

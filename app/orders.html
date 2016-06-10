@@ -175,17 +175,43 @@
       </div>
     </footer>
   </div>
-  <!--[if lte IE 8]>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->
+  <div class="hide">
+    <div id="form-entire" class="form-entire">
+      <div class="form-entire_title"><span class="form-entire_skew">Вход для партнеров</a></div>
+        <form action="#">
+          <div class="form-entire_wrap">
+            <div class="form-entire_group">
+              <label for="login">Ваш логин:</label>
+              <div class="form-entire_inner">
+                <input type="text" class="form-control" id="login">
+              </div>
+            </div>
+            <div class="form-entire_group">
+              <label for="pwd">Ваш пароль:</label>
+              <div class="form-entire_inner">
+                <input type="password" class="form-control" id="pwd">
+              </div>
+            </div>
+          </div>
+          <div class="form-entire_submit">
+            <input type="submit" value="войти">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- build:js js/jquery.js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbuild -->
   <!-- build:js js/vendor.js -->
   <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
   <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
+  <script src="js/jquery.tooltipster.min.js"></script>
+  <script src="js/dropdown.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
   <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
   <!-- endbuild -->

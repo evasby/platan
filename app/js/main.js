@@ -29,7 +29,11 @@ $(document).ready(function(){
         container.hide();
     }
   });
-
+  $(".tooltip").tooltipster({
+    position: 'bottom',
+    delay: 0,
+    speed: 100
+  });
   /***********************************/
   if($("#yamap").length>0) {
     ymaps.ready(init);

@@ -93,161 +93,206 @@
     </div>
     <div class="main">
       <div class="content">
-        <div class="select-form">
+        <div class="select-form select-form__tires">
           <form action="#">
-            <h4>Default Label</h4>
-            <select class="myselect">
-              <option value="AL">Alabama</option>
-              <option value="AK">Alaska</option>
-              <option value="AZ">Arizona</option>
-              <option value="AR">Arkansas</option>
-              <option value="CA">California</option>
-              <option value="CO">Colorado</option>
-              <option value="CT">Connecticut</option>
-              <option value="DE">Delaware</option>
-              <option value="DC">District Of Columbia</option>
-              <option value="FL">Florida</option>
-              <option value="GA">Georgia</option>
-              <option value="HI">Hawaii</option>
-              <option value="ID">Idaho</option>
-              <option value="IL">Illinois</option>
-              <option value="IN">Indiana</option>
-              <option value="IA">Iowa</option>
-              <option value="KS">Kansas</option>
-              <option value="KY">Kentucky</option>
-              <option value="LA">Louisiana</option>
-              <option value="ME">Maine</option>
-              <option value="MD">Maryland</option>
-              <option value="MA">Massachusetts</option>
-              <option value="MI">Michigan</option>
-              <option value="MN">Minnesota</option>
-              <option value="MS">Mississippi</option>
-              <option value="MO">Missouri</option>
-              <option value="MT">Montana</option>
-              <option value="NE">Nebraska</option>
-              <option value="NV">Nevada</option>
-              <option value="NH">New Hampshire</option>
-              <option value="NJ">New Jersey</option>
-              <option value="NM">New Mexico</option>
-              <option value="NY">New York</option>
-              <option value="NC">North Carolina</option>
-              <option value="ND">North Dakota</option>
-              <option value="OH">Ohio</option>
-              <option value="OK">Oklahoma</option>
-              <option value="OR">Oregon</option>
-              <option value="PA">Pennsylvania</option>
-              <option value="RI">Rhode Island</option>
-              <option value="SC">South Carolina</option>
-              <option value="SD">South Dakota</option>
-              <option value="TN">Tennessee</option>
-              <option value="TX"> Texas</option>
-              <option value="UT">Utah</option>
-              <option value="VT">Vermont</option>
-              <option value="VA">Virginia</option>
-              <option value="WA">Washington</option>
-              <option value="WV">West Virginia</option>
-              <option value="WI">Wisconsin</option>
-              <option value="WY">Wyoming</option>
-            </select>
+            <div class="select-form_wrap">
+              <div class="select-form_table">
+                <div class="select-form_item">
+                  <span class="select-form_label select-form_label__70">Бренд: </span>
+                  <div class="select-form_select">
+                    <select class="myselect">
+                      <option class="fs-dropdown-item_placeholder" selected="" value="">все</option>
+                      <option value="Nokian Tires">Nokian Tires</option>
+                      <option value="Continental">Continental</option>
+                      <option value="Pireli">Pireli</option>
+                      <option value="Bridgestone">Bridgestone</option>
+                      <option value="Michelin">Michelin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-form_item">
+                  <span class="select-form_label">Модель: </span>
+                  <div class="select-form_select">
+                    <select class="myselect">
+                      <option class="fs-dropdown-item_placeholder" selected="" value="">все</option>
+                      <option value="Nokian Tires">Nokian Tires</option>
+                      <option value="Continental">Continental</option>
+                      <option value="Pireli">Pireli</option>
+                      <option value="Bridgestone">Bridgestone</option>
+                      <option value="Michelin">Michelin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-form_checkbox">
+                    <span class="select-form_label">Параметры: </span>
+                    <input id="c1" type="checkbox" /><label for="c1">Runflat</label>
+                    <input id="c2" type="checkbox" /><label for="c2">XL</label>
+                    <input id="c3" type="checkbox" /><label for="c3">C</label>
+                </div>
+                <div class="select-form_item">
+                  <span class="select-form_label select-form_label__70">Размер: </span>
+                  <div class="select-form_select">
+                    <select class="myselect">
+                      <option class="fs-dropdown-item_placeholder" selected="" value="">все</option>
+                      <option value="2">2</option>
+                      <option value="2.25">2.25</option>
+                      <option value="2.5">2.5</option>
+                      <option value="2.75">2.75</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+                  <span class="select-form_code">I</span>
+                  <div class="select-form_select">
+                    <select class="myselect">
+                      <option class="fs-dropdown-item_placeholder" selected="" value="">все</option>
+                      <option value="0">0</option>
+                      <option value="4">4</option>
+                      <option value="7">7</option>
+                      <option value="7.5">7.5</option>
+                      <option value="8.5">8.5</option>
+                    </select>
+                  </div>
+                  <span class="select-form_code">R</span>
+                  <div class="select-form_select select-form_select__short">
+                    <select class="myselect">
+                      <option class="fs-dropdown-item_placeholder" selected="" value="">все</option>
+                      <option value="5">5</option>
+                      <option value="4">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-form_checkbox">
+                    <span class="select-form_label">Сезонность: </span>
+                    <input id="c4" type="checkbox" /><label for="c4"><span class="select-form_sun tooltip" title="лето"></span></label>
+                    <input id="c5" type="checkbox" /><label for="c5"><span class="select-form_snow tooltip" title="зима"></span></label>
+                </div>
+              </div>
+            </div>
+            <div class="select-form_submit"><input type="submit" value="Подобрать шины"></div>
           </form>
         </div>
+        <div class="filter">
+          <div class="filter_right">
+            <div class="filter_item">
+              <span class="filter_label">Количество: </span>
+              <div class="filter_select filter_select__short">
+                <select class="myselect">
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="75">75</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="filter_left">
+            <div class="filter_item">
+              <span class="filter_label">Сортировать по: </span>
+              <div class="filter_select">
+                <select class="myselect">
+                  <option value="наименованию А-Я">наименованию А-Я</option>
+                  <option value="наименованию Я-А">наименованию Я-А</option>
+                  <option value="уменьшению цены">уменьшению цены</option>
+                  <option value="увеличению цены">увеличению цены</option>
+                </select>
+              </div>
+            </div>
+          </div>  
+        </div>
         <div class="basket-table">
-          <form action="#">
-            <table>
-              <tbody>
-                <tr>
-                  <th>Фото</th>
-                  <th>Модель</th>
-                  <th>Цена</th>
-                  <th>Количество</th>
-                  <th>Итого</th>
-                  <th>Удалить</th>
-                </tr>
-                <tr>
-                  <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
-                  <td>
-                  <div class="basket-table_item"><span class="basket-table_blue">Yokohama Ice GUARD Stud</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
-                  </td>
-                  <td><span class="basket-table_price">5 950 руб.</span></td>
-                  <td>
-                    <div class="basket-table_quanity">
-                      <a href="javascript:void(0);" class="basket-table_minus"></a>
-                      <input type="text" value="4">
-                      <a href="javascript:void(0);" class="basket-table_plus"></a>
-                    </div>
-                  </td>
-                  <td><span class="basket-table_price">23 800 руб</span>.</td>
-                  <td><span class="basket-table_cancel"></span></td>
-                </tr>
-                <tr>
-                  <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
-                  <td>
-                    <div class="basket-table_item"><span class="basket-table_blue">Antera Type 345</span><span class="basket-table_gray">Характеристики: литые, алюминевый сплав; Ширина: 10; Диаметр: 20; PSD: 5/130; ET: 52; DIA: 71.6; Цвет: Silver Lip Polished</span></div>
-                  </td>
-                  <td><span class="basket-table_price">5 500 руб.</span></td>
-                  <td>
-                    <div class="basket-table_quanity">
-                      <a href="javascript:void(0);" class="basket-table_minus"></a>
-                      <input type="text" value="4">
-                      <a href="javascript:void(0);" class="basket-table_plus"></a>
-                    </div>
-                  </td>
-                  <td><span class="basket-table_price">22 000 руб</span>.</td>
-                  <td><span class="basket-table_cancel"></span></td>
-                </tr>
-                <tr>
-                  <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
-                  <td>
-                    <div class="basket-table_item"><span class="basket-table_blue">Dunlop Sportmax SportSmart</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
-                  </td>
-                  <td><span class="basket-table_price">5 230 руб.</span></td>
-                  <td>
-                    <div class="basket-table_quanity">
-                      <a href="javascript:void(0);" class="basket-table_minus"></a>
-                      <input type="text" value="2">
-                      <a href="javascript:void(0);" class="basket-table_plus"></a>
-                    </div>
-                  </td>
-                  <td><span class="basket-table_price">10 460 руб</span>.</td>
-                  <td><span class="basket-table_cancel"></span></td>
-                </tr>
-                <tr>
-                  <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
-                  <td>
-                    <div class="basket-table_item"><span class="basket-table_blue">GT-Radial ST-4000 Cargomax</span><span class="basket-table_gray">Характеристики: литые, алюминевый сплав; Ширина: 10; Диаметр: 20; PSD: 5/130; ET: 52; DIA: 71.6; Цвет: Silver Lip Polished</span></div>
-                  </td>
-                  <td><span class="basket-table_price">6 225 руб.</span></td>
-                  <td>
-                    <div class="basket-table_quanity">
-                      <a href="javascript:void(0);" class="basket-table_minus"></a>
-                      <input type="text" value="4">
-                      <a href="javascript:void(0);" class="basket-table_plus"></a>
-                    </div>
-                  </td>
-                  <td><span class="basket-table_price">24 900 руб</span>.</td>
-                  <td><span class="basket-table_cancel"></span></td>
-                </tr>
-                <tr>
-                  <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
-                  <td>
-                    <div class="basket-table_item"><span class="basket-table_blue">Titan Standart 6 CT-66.1L</span><span class="basket-table_gray">Размер: 225/60 R17; Индексы: 88 T; Параметры: XL</span></div>
-                  </td>
-                  <td><span class="basket-table_price">3 890 руб.</span></td>
-                  <td>
-                    <div class="basket-table_quanity">
-                      <a href="javascript:void(0);" class="basket-table_minus"></a>
-                      <input type="text" value="1">
-                      <a href="javascript:void(0);" class="basket-table_plus"></a>
-                    </div>
-                  </td>
-                  <td><span class="basket-table_price">3 890 руб.</span></td>
-                  <td><span class="basket-table_cancel"></span></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="basket-table_total">Итого к оплате: <span>85 050 руб.</span></div>
-            <div class="basket-table_submit"><input type="submit" value="Оформить заказ"></div>
-          </form>
+          <table>
+            <tbody>
+              <tr>
+                <th>Фото</th>
+                <th>Модель</th>
+                <th>Размер</th>
+                <th>Индексы</th>
+                <th>Параметры</th>
+                <th>Оптовая цена</th>
+                <th>Количество</th>
+                <th>В корзину</th>
+              </tr>
+              <tr>
+                <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
+                <td>Yokohama Ice GUARD Stud</td>
+                <td>225/60 R17</td>
+                <td>88 T</td>
+                <td>Xl</td>
+                <td><span class="basket-table_price">5 950 руб.</span></td>
+                <td>
+                  <div class="basket-table_quanity">
+                    <span class="basket-table_quanitydescr">20 (под заказ)</span>
+                    <a href="javascript:void(0);" class="basket-table_minus"></a>
+                    <input type="text" value="4">
+                    <a href="javascript:void(0);" class="basket-table_plus"></a>
+                  </div>
+                </td>
+                <td><span class="basket-table_basket"></span></td>
+              </tr>
+              <tr>
+                <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
+                <td>Yokohama Ice GUARD Stud</td>
+                <td>225/60 R17</td>
+                <td>88 T</td>
+                <td>Xl</td>
+                <td><span class="basket-table_price">5 950 руб.</span></td>
+                <td>
+                  <div class="basket-table_quanity">
+                    <span class="basket-table_quanitydescr">20 (под заказ)</span>
+                    <a href="javascript:void(0);" class="basket-table_minus"></a>
+                    <input type="text" value="4">
+                    <a href="javascript:void(0);" class="basket-table_plus"></a>
+                  </div>
+                </td>
+                <td><span class="basket-table_basket"></span></td>
+              </tr>
+              <tr>
+                <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
+                <td>Yokohama Ice GUARD Stud</td>
+                <td>225/60 R17</td>
+                <td>88 T</td>
+                <td>Xl</td>
+                <td><span class="basket-table_price">5 950 руб.</span></td>
+                <td>
+                  <div class="basket-table_quanity">
+                    <span class="basket-table_quanitydescr">20 (под заказ)</span>
+                    <a href="javascript:void(0);" class="basket-table_minus"></a>
+                    <input type="text" value="4">
+                    <a href="javascript:void(0);" class="basket-table_plus"></a>
+                  </div>
+                </td>
+                <td><span class="basket-table_basket"></span></td>
+              </tr>
+              <tr>
+                <td><a href="images/big.jpg" class="basket-table_photo"></a></td>
+                <td>Yokohama Ice GUARD Stud</td>
+                <td>225/60 R17</td>
+                <td>88 T</td>
+                <td>Xl</td>
+                <td><span class="basket-table_price">5 950 руб.</span></td>
+                <td>
+                  <div class="basket-table_quanity">
+                    <span class="basket-table_quanitydescr">20 (под заказ)</span>
+                    <a href="javascript:void(0);" class="basket-table_minus"></a>
+                    <input type="text" value="4">
+                    <a href="javascript:void(0);" class="basket-table_plus"></a>
+                  </div>
+                </td>
+                <td><span class="basket-table_basket"></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <ul class="pagination_list">
+              <li class="pagination_item"><a class="pagination_link" href="#"><span>1</span></a></li>
+              <li class="pagination_item pagination_item__active"><span>2</span></li>
+              <li class="pagination_item"><a class="pagination_link" href="#"><span>3</span></a></li>
+              <li class="pagination_item"><a class="pagination_link" href="#"><span>4</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -285,18 +330,18 @@
       </div>
     </footer>
   </div>
-  <!--[if lte IE 8]>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->
+  <!-- build:js js/jquery.js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbuild -->
   <!-- build:js js/vendor.js -->
   <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
   <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
+  <script src="js/jquery.tooltipster.min.js"></script>
+  <script src="js/dropdown.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
-    <script src="js/dropdown.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
   <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
   <!-- endbuild -->

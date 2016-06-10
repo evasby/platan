@@ -1,0 +1,96 @@
+.orders-confirm{
+	width: 571px;
+	textarea{
+		width: 100%;
+		height: 227px;
+		border: 1px solid #d5e0e5;
+		margin-top: 20px;
+		padding: 5px;
+	}
+	p{
+		margin-bottom: 8px;
+	}
+	&_bottom{
+		@include clearfix;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		margin-top: 14px;
+	}
+	&_cancel{
+		float: left;
+		width: 217px;
+		height: 30px;
+		padding: 9px 0 0 0;
+		position: relative;
+		background-color: #d5e0e5;
+		transform-origin: 0 0;
+		transform: skewX(-11deg);
+		&:hover{
+			background-color: #c5d4df;
+		}
+		a{
+			font-family: $days;
+			font-size: 12px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: none;
+			@include link(#2c2c30, #2c2c30);
+			transform: skewX(11deg);
+		}
+		/*&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: #d5e0e5;
+			z-index: -1;
+			transform-origin: 0 0;
+			transform: skewX(-11deg);
+		}*/
+	}
+	&_submit{
+		float: right;
+		cursor: pointer;
+		width: 217px;
+		height: 30px;
+		position: relative;
+		background-color: #0a5999;
+		transform-origin: 0 100%;
+		transform: skewX(-11deg);
+		input{
+			cursor: pointer;
+			background-color: transparent;
+			border: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-family: $days;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #fff;
+			text-align: center;
+			transform: skewX(11deg);
+		}
+		&:hover{
+			background-color: #0081c7;
+		}
+		/*&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: #0a5999;
+			z-index: -1;
+			transform-origin: 0 100%;
+			transform: skewX(-11deg);
+		}*/
+	}
+}

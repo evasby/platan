@@ -4,7 +4,6 @@
   max-width: 300px;
   position: relative;
   z-index: 1;
-  
 }
 .fs-dropdown,.fs-dropdown *,.fs-dropdown :after,.fs-dropdown :before,.fs-dropdown:after,.fs-dropdown:before
 {
@@ -31,39 +30,61 @@
 .fs-dropdown-selected
 {
   height: 30px;
-  transform: skewX(-11deg);
-  background: #fff;
+  background: transparent;
   border: 1px solid;
   border: none;
   color: #000;
   cursor: pointer;
   display: block;
-  overflow: hidden;
+  //overflow: hidden;
+  overflow: visible;
   padding: 0 0 0 20px;
   position: relative;
   text-align: left;
   text-overflow: clip;
   width: 100%;
   z-index: 2;
-  background-color: #d5e0e5;
   font-family: $days;
   font-size: 12px;
   color: #7b93a8;
+  outline: none;
+  &:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d5e0e5;
+    transform-origin: 0 100%;
+    transform: skewX(-11deg);
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 10px;
+    height: 5px;
+    background: url('../images/select-arrow.png');
+  }
 }
 .fs-dropdown-options
 {
-  padding-top: 12px;
+  padding: 12px 0 12px 0;
   background: #fff;
   //border: 1px solid;
   display: none;
   left: 0;
-  max-height: 260px;
+  max-height: 275px;
   overflow: auto;
   overflow-x: hidden;
   position: absolute;
   top: 100%;
   width: 100%;
   z-index: 5;
+  box-shadow: 0px 5px 10px 0px rgba(173,194,209,0.75);
 }
 .fs-dropdown-options.fs-scrollbar
 {
@@ -76,7 +97,7 @@
 }
 .fs-dropdown-item
 {
-  height: 30px;
+  min-height: 30px;
   background: #fff;
   border: none;
   border-radius: 0;

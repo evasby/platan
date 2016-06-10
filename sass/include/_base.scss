@@ -59,10 +59,17 @@ input{
 button, input[type="reset"], input[type="button"], input[type="submit"] {
   box-shadow: none;
 }
-a, input, textarea{
+a, input, textarea, select, button, div{
+  outline: 0;
   &:focus{
     outline: none;
   }
+}
+select{
+  height: 30px;
+  border: 0;
+  background-color: #D5E0E5;
+  width: 196px;
 }
 pre{
   word-wrap: break-word;

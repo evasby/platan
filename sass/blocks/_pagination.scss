@@ -1,5 +1,8 @@
 .pagination{
 	padding-top: 37px;
+	.basket-table &{
+		padding-top: 69px;
+	}
 	&_list{
 		text-align: center;
 		margin: 0!important;
