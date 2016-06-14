@@ -1,25 +1,9 @@
 /* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
 .tooltipster-default {
-	//border-radius: 5px; 
-	//border: 2px solid #000;
-	//background: transparent;
 	color: #fff;
 	background-color: #7b93a8;
 	transform-origin: 100% 0;
 	transform: skewX(-11deg);
-	/*position: relative;
-	&:before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #7b93a8;
-    transform-origin: 0 100%;
-    transform: skewX(-11deg);
-  }*/
 }
 
 /* Use this next selector to style things like font-size and line-height: */

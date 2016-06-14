@@ -47,7 +47,6 @@ i, em{
   font-style: italic;
 }
 textarea{
-  //font-family: $font;
   resize: none;
   box-shadow: none;
   border-radius: 0px;
@@ -73,36 +72,6 @@ select{
 }
 pre{
   word-wrap: break-word;
-}
-::-webkit-input-placeholder {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
-}
-:-moz-placeholder {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
-}
-::-moz-placeholder {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
-}
-:-ms-input-placeholder {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
-}
-::-ms-input-placeholder {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
-}
-:placeholder-shown {
-  //font-family: $font;
-  /*color: #434242;
-  font-size: 20px;*/
 }
 .hide{
   display: none;

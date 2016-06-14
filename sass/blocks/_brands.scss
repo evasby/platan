@@ -3,9 +3,6 @@
 	&_item{
 		@include clearfix;
 		margin-bottom: 35px;
-		/*display: block;
-		text-decoration: none;
-		@include link(#5c5c5e, #5c5c5e);*/
 		width: 100%;
 	}
 	&_left{
@@ -55,7 +52,6 @@
 			transform: skewX(10deg);
 			transition: right, 0.2s;
 		}
-
 		.brands_wrap:hover &:after{
 			right: -27px;
 		}
@@ -93,7 +89,6 @@
 	}
 	&_right{
 		width: 196px;
-		//margin-left: -250px;
 		float: left;
 		margin: 55px 0 0 -196px;
 		background: #0081c7;

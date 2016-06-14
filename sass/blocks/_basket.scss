@@ -41,16 +41,12 @@
 		padding: 8px 0 0 0;
 		overflow: hidden;
 		width: 30px;
-		height: 30px;
-		//position: relative;
-		//top:-5px;
-		
+		height: 30px;		
 		background-color: #d5e0e5;
 		background: linear-gradient(to bottom, #ffffff 0%, #d5e0e5 100%);
 		font-family: $days;
 		color: #2c2c30;
 		text-align: center;
-		
 		span{
 			display: block;
 			transform: skewX(10deg);

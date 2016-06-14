@@ -20,15 +20,6 @@ $(document).ready(function(){
   });
   $(".entry_link").colorbox({inline:true, href:"#form-entire", opacity: 0.8, top: "20%"});
   $(".basket-table_photo").colorbox({className: 'ctable', transition: 'none'});
-  $(".basket_link").click(function(){
-    $(".basket-popup").show();
-  });
-  $(document).mouseup(function (e) {
-    var container = $(".basket-popup");
-    if (container.has(e.target).length === 0){
-        container.hide();
-    }
-  });
   $(".tooltip").tooltipster({
     position: 'bottom',
     delay: 0,

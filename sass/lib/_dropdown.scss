@@ -36,7 +36,6 @@
   color: #000;
   cursor: pointer;
   display: block;
-  //overflow: hidden;
   overflow: visible;
   padding: 0 0 0 20px;
   position: relative;
@@ -74,7 +73,6 @@
 {
   padding: 12px 0 12px 0;
   background: #fff;
-  //border: 1px solid;
   display: none;
   left: 0;
   max-height: 275px;
@@ -179,11 +177,6 @@
 .fs-dropdown-options.fs-scrollbar
 {
   overflow: hidden;
-}
-.fs-dropdown-options.fs-scrollbar .fs-scrollbar-bar
-{
-  //border: 1px solid;
-  //border-width: 0 0 0 1px;
 }
 .fs-dropdown-options.fs-scrollbar .fs-scrollbar-content
 {

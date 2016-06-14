@@ -1,36 +1,28 @@
 .partners{
 	padding: 0 35px;
 	position: absolute;
-	top: -35px;
+	top: -44px;
 	left: 0;
 	width: 100%;
 	z-index: 1;
-	max-height: 70px;
+	max-height: 98px;
+	background: url('../images/partners-bac.png') transparent 50% 50% no-repeat;
 	&_wrap{
-		padding: 22px 90px 0 95px;
-		height: 70px;
+		padding: 31px 90px 0 95px;
+		height: 98px;
 		overflow: hidden;
-		background-color: #ffffff;
-		background: linear-gradient(to bottom, #ffffff 0%, #d5e0e5 100%);
-		transform: skewX(-8deg);
 		position: relative;
-		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
-	}
-	&_list,
-	.lSSlideOuter{
-		transform: skewX(8deg);
 	}
 	&_left{
 		cursor: pointer;
 		display: block;
-		transform: skewX(8deg);
 		background-image: url('../images/partners-arrows.png');
 		position: absolute;
 		top: 50%;
 		left: 30px;
 		width: 35px;
 		height: 30px;
-		margin-top: -14px;
+		margin-top: -19px;
 		opacity: 1;
 		&:hover{
 			background-position: 0 -40px;
@@ -39,7 +31,6 @@
 	&_right{
 		cursor: pointer;
 		display: block;
-		transform: skewX(9deg);
 		background-image: url('../images/partners-arrows.png');
 		background-position: -39px 0;
 		position: absolute;
@@ -47,7 +38,7 @@
 		right: 30px;
 		width: 35px;
 		height: 30px;
-		margin-top: -14px;
+		margin-top: -19px;
 		opacity: 1;
 		&:hover{
 			background-position: -39px -40px;

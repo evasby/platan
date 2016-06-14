@@ -20,15 +20,6 @@ $(document).ready(function(){
   });
   $(".entry_link").colorbox({inline:true, href:"#form-entire", opacity: 0.8, top: "20%"});
   $(".basket-table_photo").colorbox({className: 'ctable', transition: 'none'});
-  $(".basket_link").click(function(){
-    $(".basket-popup").show();
-  });
-  $(document).mouseup(function (e) {
-    var container = $(".basket-popup");
-    if (container.has(e.target).length === 0){
-        container.hide();
-    }
-  });
   $(".tooltip").tooltipster({
     position: 'bottom',
     delay: 0,
@@ -47,7 +38,7 @@ $(document).ready(function(){
     myPlacemark = new ymaps.Placemark([59.90648525806242,30.372057499999976], {   
       },{
         iconLayout: 'default#image',
-        iconImageHref: '../images/yamap-marker.png',
+        iconImageHref: './images/yamap-marker.png',
         iconImageSize: [59, 62],
         iconImageOffset: [-26, -62]
     });
